@@ -1,0 +1,48 @@
+/* Copyright (c) 2025 Michael Barlow */
+
+:root {
+  color-scheme: light dark;
+  
+  --background-colour: #f4f4f4;
+  --text-colour: #1a1a1a;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-colour: #1a1a1a;
+    --text-colour: #e5e5e5;
+  }
+}
+
+body {
+  font-family: monospace;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+  background-color: var(--background-colour);
+}
+
+#snippet {
+  padding: 1em;
+  color: var(--text-colour);
+  outline: none;
+  flex-grow: 1;
+
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+footer {
+  padding: 0.6em 1.4em;
+}
+
+.footer-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: var(--text-colour);
+  display: flex;
+  justify-content: flex-end;
+  gap: 1em;
+}

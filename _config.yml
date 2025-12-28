@@ -1,0 +1,12 @@
+defaults:
+  - scope:
+      path: "README.md"
+    values:
+      permalink: /info/
+  - scope:
+      path: "404.md"
+    values:
+      permalink: /404.html
+
+include:
+  - README.md

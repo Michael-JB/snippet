@@ -56,6 +56,7 @@ const decode = async (encoded) => {
     const buffer = await feed(bytes, new DecompressionStream("deflate-raw"));
     return new TextDecoder("utf-8", { fatal: true }).decode(buffer);
   } catch (e) {
+    console.debug("Decoding failed:", e);
     return null;
   }
 };

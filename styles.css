@@ -3,13 +3,15 @@
 :root {
   color-scheme: light dark;
   
-  --background-colour: #f4f4f4;
+  --background-colour: #e8e8e8;
+  --foreground-colour: #f4f4f4;
   --text-colour: #1a1a1a;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background-colour: #1a1a1a;
+    --background-colour: #161616;
+    --foreground-colour: #1a1a1a;
     --text-colour: #e5e5e5;
   }
 }
@@ -26,6 +28,7 @@ body {
   min-height: 100dvh;
   display: flex;
   flex-direction: column;
+  background-color: var(--foreground-colour);
 }
 
 #snippet {

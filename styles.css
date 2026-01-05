@@ -24,7 +24,7 @@ html {
 body {
   font-family: monospace;
   margin: 0 auto;
-  max-width: 60em;
+  max-width: 65em;
   min-height: 100dvh;
   display: flex;
   flex-direction: column;
